@@ -1,0 +1,24 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "metapiston"
+version = "0.1.dev0"
+description = "Python library for handling Minecraft data files"
+authors = ["Jevex <79948076+jevexendo@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+pydantic = "^2.6.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.1"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]

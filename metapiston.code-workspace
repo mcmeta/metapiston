@@ -1,0 +1,45 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "name": "Metapiston"
+        }
+    ],
+    "settings": {
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.detectIndentation": false,
+            "editor.tabSize": 4,
+            "files.insertFinalNewline": true
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.detectIndentation": false,
+            "editor.tabSize": 4,
+            "files.insertFinalNewline": true
+        },
+        "[python]": {
+            "editor.defaultFormatter": "charliermarsh.ruff",
+            "files.insertFinalNewline": true
+        },
+        "files.associations": {
+            "*.mcmeta": "json"
+        },
+        "python.testing.unittestArgs": [
+            "-v",
+            "-s",
+            "./tests",
+            "-p",
+            "test_*.py"
+        ],
+        "python.testing.pytestEnabled": false,
+        "python.testing.unittestEnabled": true
+    },
+    "extensions": {
+        "recommendations": [
+            "charliermarsh.ruff",
+            "esbenp.prettier-vscode",
+            "ms-python.python"
+        ]
+    }
+}
